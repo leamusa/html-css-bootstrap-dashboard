@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px dashed;
 }
+
 /* HEADER */
 .header {
   background-color: #3498db;
@@ -16,12 +16,12 @@
 /* NAV LEFT */
 .big-container {
   display: flex;
-  background-color: #c90a9f; /
+  background-color: #c90a9f;
 }
 
 .nav-left {
   flex: 0 0 150px;
-  background-color: #754fb7; 
+  background-color: #ab4fb7;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -35,6 +35,10 @@
 }
 
 /* NAV LEFT XS */
+.continer-nav-left-xs {
+  padding: 10px;
+  display: none; /* Nascondi di default */
+}
 
 .nav-left-xs {
   height: 100%;
@@ -42,7 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #007bff; /* Blu Bootstrap */
+  background-color: #007bff;
   text-align: center;
   color: white;
 }
@@ -51,7 +55,7 @@
 .central {
   height: 100%;
   width: 100%;
-  padding: 20px; /* Aggiunto padding per separazione dai bordi */
+  padding: 20px;
 }
 
 .students {
@@ -64,7 +68,7 @@
 .container-prossime-classi-and-faq {
   width: 60%;
   padding: 20px;
-  background-color: #4398ec; /* Grigio Bootstrap */
+  background-color: #4398ec;
   border-radius: 10px;
   margin: 20px 0;
 }
@@ -74,31 +78,36 @@
   width: 35%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #3f9e40; /* Grigio Bootstrap */
+  background-color: #3f9e40;
   border-radius: 10px;
 }
 
 /* UTENTI ATTIVI */
 .utenti-attivi {
   margin-top: 30px;
-  background-color: #0a62d5; /* Bianco Bootstrap */
+  background-color: #0a62d5;
   padding: 20px;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 991px) {
-    /* Nascondi la nav su dispositivi più piccoli di tablet */
-    .nav-left {
-      display: none;
-    }
-  
-    /* Mostra solo icone sulla barra laterale */
-    .continer-nav-left-xs {
-      display: flex;
-    }
-  
-    .nav-links {
-      display: none;
-    }
+@media all and (max-width: 768px) {
+  .container-prossime-classi-and-faq,
+  .container-todo-utenti-attivi {
+    width: 100%;
   }
-  
+}
+@media screen and (max-width: 991px) {
+  /* Nascondi la nav su dispositivi più piccoli di tablet */
+  .nav-left {
+    display: none;
+  }
+
+  /* Mostra solo icone sulla barra laterale */
+  .continer-nav-left-xs {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
