@@ -2,6 +2,156 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px dashed;
-  background-color: brown;
+  border: 2px dashed;
 }
+
+/* HEADER */
+
+.header {
+  background-color: #1bbdcf;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed;
+}
+
+/* NAV LEFT */
+.container-left {
+    display: flex;
+    background-color: #06e983;
+    padding: 20px;
+    border: 2px dashed;
+  }
+  
+  .nav-left {
+    flex: 0 0 150px;
+    background-color: #ec0571;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px dashed;
+  }
+/* NAV LEFT XS */
+.continer-nav-left-xs {
+  display: none;
+}
+
+.nav-left-xs {
+  height: 100%;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(26, 175, 205);
+  color: rgb(233, 14, 14);
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed;
+}
+
+/* Admin Section */
+.nav-left div:nth-child(2),
+.nav-left div:nth-child(3),
+.nav-left div:nth-child(4) {
+  background-color: #ffcc00;
+  /padding: 10px;
+  border: 2px dashed;
+}
+
+/* NAV LEFT */
+.nav-left-container {
+  display: flex;
+  background-color: #06e983;
+  padding: 20px;
+  border: 2px dashed;
+}
+
+.nav-left {
+  flex: 0 0 150px;
+  background-color: #ec0571;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px dashed;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed;
+  background-color: #db3434;
+}
+/* NAV CENTER */
+.central {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed;
+  background-color: #43ec81;
+}
+
+.students {
+  height: 120px;
+  background-color: #e81b99;
+  padding-right: 5%;
+  text-align: center;
+  border: 2px dashed;
+}
+
+/* CONTAINER PROSSIME CLASSI AND FAQ */
+.container-prossime-classi-and-faq {
+  width: 60%;
+  padding: 20px;
+  background-color: #a13896;
+  border-radius: 10px;
+  margin: 20px 0;
+  text-align: center;
+  border: 2px dashed;
+}
+
+/* CONTAINER TODO UTENTI ATTIVI */
+.container-todo-utenti-attivi {
+  width: 35%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #68a6e3;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px dashed;
+}
+
+/* UTENTI ATTIVI */
+.utenti-attivi {
+  margin-top: 30px;
+  background-color: #d1b008;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px dashed;
+}
+
+@media all and (max-width: 768px) {
+  .container-prossime-classi-and-faq,
+  .container-todo-utenti-attivi {
+    width: 100%;
+  }
+}
+/* Media Query per nascondere il menu di sinistra nelle schermate più piccole */
+@/* Media Query per nascondere il menu di sinistra nelle schermate più piccole */
+@media all and (max-width: 768px) {
+    .nav-left {
+      display: none;
+    }
+  
+    .continer-nav-left-xs {
+      display: block;
+    }
+  }
