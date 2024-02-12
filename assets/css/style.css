@@ -2,51 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dashed;
 }
-
-body {
-  font-family: "Arial", sans-serif;
-}
-
 /* HEADER */
 .header {
-  background-color: #1bbdcf;
+  background-color: #3498db;
   color: #fff;
   text-align: center;
   padding: 20px;
+  border: 2px dashed;
+}
+
 }
 
 /* NAV LEFT */
 .big-container {
-  flex: 1;
+  display: flex;
+  background-color: #c90a9f; /* Grigio Bootstrap */
 }
 
 .nav-left {
+  flex: 0 0 150px;
+  background-color: #007bff; /* Blu Bootstrap */
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #06e983;
-  padding: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
   margin-bottom: 15px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.nav-left div:nth-child(2),
-.nav-left div:nth-child(3),
-.nav-left div:nth-child(4) {
-  background-color: #ffcc00;
 }
 
 /* NAV LEFT XS */
 .continer-nav-left-xs {
-  display: flex;
+  padding: 10px;
+  display: none; /* Nascondi di default */
 }
 
 .nav-left-xs {
@@ -55,35 +48,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(101, 205, 26);
-  color: rgb(233, 14, 14);
+  background-color: #007bff; /* Blu Bootstrap */
   text-align: center;
-  padding: 20px;
+  color: white;
 }
 
 /* NAV CENTER */
 .central {
   height: 100%;
   width: 100%;
-  padding: 20px;
-  text-align: center;
+  padding: 20px; /* Aggiunto padding per separazione dai bordi */
 }
 
 .students {
   height: 120px;
-  background-color: #e81b99;
+  background-color: #1b72e8;
   padding-right: 5%;
-  text-align: center;
 }
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
 .container-prossime-classi-and-faq {
   width: 60%;
   padding: 20px;
-  background-color: #a13896;
+  background-color: #4398ec; /* Grigio Bootstrap */
   border-radius: 10px;
   margin: 20px 0;
-  text-align: center;
 }
 
 /* CONTAINER TODO UTENTI ATTIVI */
@@ -91,31 +80,26 @@ body {
   width: 35%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #68a6e3;
+  background-color: #f8f9fa; /* Grigio Bootstrap */
   border-radius: 10px;
-  text-align: center;
 }
+.container-faq {
+    margin-top: 30px;
+    background-color: #18a9bc; /* Bianco Bootstrap */
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-/* UTENTI ATTIVI */
-.utenti-attivi {
+/* todo */
+.container-todo {
   margin-top: 30px;
-  background-color: #d1b008;
+  background-color: #bc1818; /* Bianco Bootstrap */
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
 }
 
 @media all and (max-width: 768px) {
-  .nav-left {
-    display: none;
-  }
-
-  .continer-nav-left-xs {
-    display: block;
-  }
-}
-
-@media all and (max-width: 768px) {
+  .container-prossime-classi-and-faq,
   .container-todo-utenti-attivi {
     width: 100%;
   }
