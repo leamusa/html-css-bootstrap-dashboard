@@ -97,10 +97,20 @@
   padding: 20px;
   border-radius: 10px;
 }
+/******media query *******************/
 
 @media all and (max-width: 768px) {
-  .container-prossime-classi-and-faq,
-  .container-todo-utenti-attivi {
+    .nav-left {
+      display: none;
+    }
+  
+    .continer-nav-left-xs {
+      display: block;
+    }
+  }
+@media all and (max-width: 768px) {
+  .container-prossime-classi-faq, .container-utenti
+  .container-todo {
     width: 100%;
   }
 }
