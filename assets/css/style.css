@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,6 @@
 }
 
 /* HEADER */
-
 .header {
   background-color: #1bbdcf;
   color: #fff;
@@ -15,24 +15,48 @@
   border: 2px dashed;
 }
 
+.header i {
+  padding-left: 10px;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
 /* NAV LEFT */
 .container-left {
-    display: flex;
-    background-color: #06e983;
-    padding: 20px;
-    border: 2px dashed;
-  }
-  
-  .nav-left {
-    flex: 0 0 150px;
-    background-color: #ec0571;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    border: 2px dashed;
-  }
+  display: flex;
+  background-color: #06e983;
+  padding: 20px;
+  border: 2px dashed;
+}
+
+.nav-left {
+  flex: 0 0 150px;
+  background-color: #ec0571;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 2px dashed;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  line-height: 35px;
+  margin-left: 10%;
+}
+
+.nav-left i {
+  margin-right: 10px;
+}
+
+.nav-links:hover {
+  background-color: rgb(157, 157, 157);
+}
+
 /* NAV LEFT XS */
 .continer-nav-left-xs {
   display: none;
@@ -56,38 +80,10 @@
 .nav-left div:nth-child(3),
 .nav-left div:nth-child(4) {
   background-color: #ffcc00;
-  /padding: 10px;
-  border: 2px dashed;
-}
-
-/* NAV LEFT */
-.nav-left-container {
-  display: flex;
-  background-color: #06e983;
-  padding: 20px;
-  border: 2px dashed;
-}
-
-.nav-left {
-  flex: 0 0 150px;
-  background-color: #ec0571;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
   border: 2px dashed;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 15px;
-  text-align: center;
-  padding: 20px;
-  border: 2px dashed;
-  background-color: #db3434;
-}
 /* NAV CENTER */
 .central {
   height: 100%;
@@ -107,25 +103,22 @@
 }
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
-.container-prossime-classi-and-faq {
+.container-prossime-classi-and-faq,
+.container-todo-utenti-attivi {
   width: 60%;
+  margin: 20px auto;
   padding: 20px;
-  background-color: #a13896;
   border-radius: 10px;
-  margin: 20px 0;
   text-align: center;
   border: 2px dashed;
 }
 
-/* CONTAINER TODO UTENTI ATTIVI */
+.container-prossime-classi-and-faq {
+  background-color: #a13896;
+}
+
 .container-todo-utenti-attivi {
-  width: 35%;
-  margin: 20px auto;
-  padding: 20px;
   background-color: #68a6e3;
-  border-radius: 10px;
-  text-align: center;
-  border: 2px dashed;
 }
 
 /* UTENTI ATTIVI */
@@ -143,15 +136,12 @@
   .container-todo-utenti-attivi {
     width: 100%;
   }
-}
-/* Media Query per nascondere il menu di sinistra nelle schermate più piccole */
-@/* Media Query per nascondere il menu di sinistra nelle schermate più piccole */
-@media all and (max-width: 768px) {
-    .nav-left {
-      display: none;
-    }
-  
-    .continer-nav-left-xs {
-      display: block;
-    }
+
+  .nav-left {
+    display: none;
   }
+
+  .continer-nav-left-xs {
+    display: block;
+  }
+}
