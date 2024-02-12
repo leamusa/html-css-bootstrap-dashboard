@@ -4,40 +4,49 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Arial", sans-serif;
+}
+
 /* HEADER */
 .header {
-  background-color: #3498db;
+  background-color: #1bbdcf;
   color: #fff;
   text-align: center;
   padding: 20px;
-  border: 2px dashed;
 }
 
 /* NAV LEFT */
 .big-container {
-  display: flex;
-  background-color: #c90a9f;
+  flex: 1;
 }
 
 .nav-left {
-  flex: 0 0 150px;
-  background-color: #ab4fb7;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #06e983;
+  padding: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
   margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-left div:nth-child(2),
+.nav-left div:nth-child(3),
+.nav-left div:nth-child(4) {
+  background-color: #ffcc00;
 }
 
 /* NAV LEFT XS */
 .continer-nav-left-xs {
-  padding: 10px;
-  display: none; /* Nascondi di default */
+  display: flex;
 }
 
 .nav-left-xs {
@@ -46,9 +55,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #007bff;
+  background-color: rgb(101, 205, 26);
+  color: rgb(233, 14, 14);
   text-align: center;
-  color: white;
+  padding: 20px;
 }
 
 /* NAV CENTER */
@@ -56,21 +66,24 @@
   height: 100%;
   width: 100%;
   padding: 20px;
+  text-align: center;
 }
 
 .students {
   height: 120px;
-  background-color: #1b72e8;
+  background-color: #e81b99;
   padding-right: 5%;
+  text-align: center;
 }
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
 .container-prossime-classi-and-faq {
   width: 60%;
   padding: 20px;
-  background-color: #4398ec;
+  background-color: #a13896;
   border-radius: 10px;
   margin: 20px 0;
+  text-align: center;
 }
 
 /* CONTAINER TODO UTENTI ATTIVI */
@@ -78,42 +91,32 @@
   width: 35%;
   margin: 20px auto;
   padding: 20px;
-  background-color: #3f9e40;
+  background-color: #68a6e3;
   border-radius: 10px;
-  display: ;
+  text-align: center;
 }
 
 /* UTENTI ATTIVI */
 .utenti-attivi {
   margin-top: 30px;
-  background-color: #0a62d5;
+  background-color: #d1b008;
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 
-@media screen and (max-width: 991px) {
-  /* Nascondi la nav su dispositivi più piccoli di tablet */
+@media all and (max-width: 768px) {
   .nav-left {
     display: none;
   }
 
-  /* Mostra solo icone sulla barra laterale */
   .continer-nav-left-xs {
-    display: flex;
+    display: block;
   }
+}
 
-  .nav-links {
-    display: none;
-  }
-
-  /* Sposta il container-todo-utenti-attivi sotto il container-prossime-classi-and-faq */
+@media all and (max-width: 768px) {
   .container-todo-utenti-attivi {
     width: 100%;
-    margin-top: 20px; /* Aggiungi uno spazio tra i due container */
-  }
-
-  .d-flex {
-    display: flex;
-    flex-direction: column;
   }
 }
