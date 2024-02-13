@@ -24,61 +24,66 @@
   </head>
 
   <!-- HEADER -->
-  <header class="header d-flex align-items-center justify-content-between">
-    <div class="logo"><img src="./assets/img/logo.svg" alt="" /></div>
-    <div class="nav-bar w-100">
-      <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid">
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="fa-solid fa-magnifying-glass"></i
-            ></span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Prova a cercare: Lezione di Lavarel"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-        </form>
-      </nav>
-    </div>
-    <div class="d-none d-lg-flex align-items-center">
-      <div>
-        <a
-          href="#"
-          class="link-secondary link-offset-2 link-underline-opacity-100-hover"
-          ><i class="fa-solid fa-list"></i
-        ></a>
-      </div>
-      <div>
-        <a
-          href="#"
-          class="link-secondary link-offset-2 link-underline-opacity-100-hover"
-          ><i class="fa-solid fa-circle-question"></i
-        ></a>
-      </div>
-      <div>
-        <a
-          href="#"
-          class="link-secondary link-offset-2 link-underline-opacity-100-hover"
-          ><i class="fa-solid fa-ellipsis-vertical"></i
-        ></a>
-      </div>
-      <div>
-        <a
-          href="#"
-          class="link-secondary link-offset-2 link-underline-opacity-100-hover"
-          ><i class="fa-solid fa-bell text-warning"></i
-        ></a>
-      </div>
-    </div>
+  <!-- header -->
+  <header class="d-flex align-items-center">
+    <!-- container fluid -->
+    <div class="container-fluid g-0 d-flex justify-content-between h-75 bg-white pt-1 pb-1 ps-2">
+        
+        <div class="container_left d-flex h-100 w-100">
+        <!-- logo -->
+            <div class="logo mh-100 d-flex align-items-center ps-lg-2 me-lg-2">
+                <img class="mh-100 off" src="./assets/img/mobile-logo.png" alt="logo mobile">
+              </div>
+              <img class="mh-100 on" src="./assets/img/logo.svg" alt="logo">
+        
+            <!-- elementi di bootstrap -->
+            
+            <!-- search -->
+            
+            <form class="d-flex w-100" role="search">
+                
+                <input class="form-control me-2 w-100 border-0 bg-light" type="search" placeholder="&#128269;  Prova a cercare: Lezioni di Laravel" aria-label="Search">
 
-    <div class="d-flex d-lg-none text-warning">
-      <i class="fa-solid fa-bell"></i>
+            </form>
+            
+            
+        </div>
+
+        <div class="container_right">
+
+            <!-- gruppo bottoni -->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <!-- bottono off -->
+                <button type="button" class="btn btn-primary off">
+                    <i class="fa-solid fa-list"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary off">
+                    <i class="fa-solid fa-circle-question"></i>
+                </button>
+                
+                <button type="button" class="btn btn-primary off">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+
+                <!-- campanella -->
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell orange"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
     </div>
-  </header>
+</header>
+    
 
   <!-- NAV LEFT -->
   <div class="big-container d-flex">
@@ -558,7 +563,7 @@
             </div>
           </div>
         </div>
-      </div>
+</div>
         <!-- CONTAINER TODO AND UTENTI ATTIVI -->
 
         <div class="container-todo-utenti-attivi">

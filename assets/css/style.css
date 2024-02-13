@@ -1,13 +1,13 @@
 header {
-  height: 80px;
-  padding-left: 1%;
-  padding-right: 1%;
+  height: 60px;
+  background-color: rgb(248, 249, 250);
 }
+
 header i {
   padding-left: 10px;
 }
 .logo {
-  margin-right: 15px;
+  margin-right: 60px;
 }
 
 /* NAV-LEFT */
@@ -124,12 +124,22 @@ caption,
 .utenti-attivi {
   margin-top: 30px;
 }
-
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
 @media all and (max-width: 768px) {
   .container-prossime-classi-and-faq {
     width: 100%;
   }
   .container-todo-utenti-attivi {
     width: 100%;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 992px) {
+  .offcanvas.offcanvas-end {
+    width: 50%;
   }
 }
