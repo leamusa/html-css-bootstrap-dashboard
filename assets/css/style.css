@@ -1,13 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 1px dashed;
-}
-/* HEADER */
-.header {
-  background-color: #3498db;
-  color: #fff;
+header {
   height: 80px;
   padding-left: 1%;
   padding-right: 1%;
@@ -19,21 +10,15 @@ header i {
   margin-right: 15px;
 }
 
-/* NAV LEFT */
-.big-container {
-  display: flex;
-  background-color: #12293e;
-}
-
+/* NAV-LEFT */
 .nav-left {
-  background-color: #0f263d;
   min-height: calc(100vh - 80px);
   width: 150px;
+  background-color: #0f263d;
   padding-left: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-
 .nav-left a {
   text-decoration: none;
   color: white;
@@ -45,17 +30,13 @@ header i {
 }
 
 .nav-links:hover {
-  background-color: rgb(174, 193, 0);
+  background-color: rgb(157, 157, 157);
 }
 
 /* NAV LEFT XS */
 .continer-nav-left-xs {
-  padding: 10px;
+  padding: 0.5%;
   display: none;
-}
-
-.nav-left-xs img {
-  opacity: 0.5;
 }
 
 .nav-left-xs {
@@ -73,47 +54,82 @@ header i {
 .central {
   height: 100%;
   width: 100%;
-  padding: 20px; /* Aggiunto padding per separazione dai bordi */
 }
 
 .students {
   height: 120px;
-  background-color: #c0c600;
+  background-color: #1b72e8;
   padding-right: 5%;
+}
+
+.nav-center .boolean-piano-blaze button {
+  border-radius: 25px;
+  background-color: #165bba;
+}
+
+.plus.btn {
+  margin-left: 15px;
 }
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
 .container-prossime-classi-and-faq {
   width: 60%;
-  padding: 20px;
-  background-color: #43ecec; /* Grigio Bootstrap */
-  border-radius: 10px;
-  margin: 20px 0;
+
+  padding: 1%;
 }
 
-/* CONTAINER TODO UTENTI ATTIVI */
+/* PROSSIME CLASSI */
+
+caption,
+.faq {
+  background-color: rgb(232, 232, 232);
+}
+
+.class {
+  padding-right: 150px;
+}
+
+.prossime-classi i {
+  max-width: 100%;
+  font-size: 150%;
+}
+
+.prossime-classi td {
+  padding: 0.1rem;
+}
+
+/* FAQ */
+.faq {
+  width: 100%;
+  margin-top: 2%;
+}
+
+.accordion {
+  --bs-accordion-active-bg: rgb(255, 255, 255);
+  --bs-accordion-btn-focus-box-shadow: rgb(0, 0, 0);
+}
+
+/* TODO */
 .container-todo-utenti-attivi {
   width: 35%;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #1720d5; /* Grigio Bootstrap */
-  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1%;
+}
+.border.rounded {
+  padding: 5px;
+  max-width: 100%;
 }
 
-/******media query *******************/
+/* UTENTI ATTIVI */
+.utenti-attivi {
+  margin-top: 30px;
+}
 
 @media all and (max-width: 768px) {
-  .nav-left-xs {
-    display: block;
+  .container-prossime-classi-and-faq {
+    width: 100%;
   }
-  .d-flex {
-    display: none;
-  }
-}
-@media all and (max-width: 768px) {
-  .container-prossime-classi-faq,
-  .container-utenti,
-  .container-todo {
+  .container-todo-utenti-attivi {
     width: 100%;
   }
 }
