@@ -31,8 +31,9 @@
   <body>
     
     <!-- HEADER -->
+<!-- HEADER -->
 <header class="header d-flex align-items-center justify-content-between">
-    <div class="logo"> <img src="./assets/img/logo.svg" alt=""></div>
+    <div class="logo"> <img src="logo.svg" alt=""></div>
     <div class="nav-bar w-100">
         <nav class="navbar bg-body-tertiary">
             <form class="container-fluid">
@@ -54,7 +55,7 @@
 </header>
 
     <!-- NAV LEFT -->
-<div class="big-container d-flex ">
+<nav class="big-container d-flex ">
     <nav class="nav-left d-flex flex-column justify-content-between d-none d-md-flex">
         <div>
             <div class="nav-links"><a href=""> <i class="fa-solid fa-house"></i>Home</a></div>
@@ -62,7 +63,8 @@
             <div class="nav-links"><a href=""> <i class="fa-solid fa-signal"></i>Signals</a></div>
         </div>
         <div>
-            <div><a href="">Admin</a></div>
+            <div class="nav-links"><a href=""> <i class="fa-solid fa-fa-gear"></i>Admin</a></div>
+            
         </div>
     </nav>
 
@@ -71,7 +73,7 @@
             <div class="nav-left-xs ">
     
                 <div class="icons-top">
-                    <div><img src="./assets/img/logo.svg" alt=""></div>
+                    <div><img src="./assets/img/" alt=""></div>
                     <div><i class="fa-solid fa-house"></i></div>
                     <div><i class="fa-solid fa-lines-leaning"></i></div>
                     <div><i class="fa-solid fa-signal"></i></div>
@@ -83,7 +85,7 @@
             </div>
         </div>
     
-
+    
     <!-- NAV CENTER -->
     <div class="central">
         <div class="students d-flex align-items">
@@ -132,14 +134,11 @@
         </div>
 
         <!-- MAIN -->
-        <main class="d-flex flex-lg-wrap">
-            <!-- CONTAINER PROSSIME CLASSI -->
-            <div class="container-prossime-classi">
-              <!-- PROSSIME CLASSI -->
-              <div class="prossime-classi">
-                <div class="table-container border rounded">
-                  <table class="table table-hover caption-top">
-                     <!-- PROSSIME CLASSI -->
+        <main class="d-flex flex-lg">
+            
+            <div class="container-prossime-classi-and-faq">
+
+                <!-- PROSSIME CLASSI -->
                 <div class="prossime-classi">
                     <div class="table-container border rounded">
                         <table class="table table-hover caption-top">
@@ -231,15 +230,7 @@
                     </div>
                 </div>
 
-                  </table>
-                </div>
-              </div>
-            </div>
-      
-            <!-- CONTAINER FAQ -->
-            <div class="container-faq">
-             <!-- FAQ -->
-             
+                <!-- FAQ -->
                 <div class="faq border rounded">
                     <h1>FAQ</h1>
                     <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -283,22 +274,13 @@
                 </div>
             </div>
 
-                </div>
-              </div>
-            </div>
-      
-        
-            
-            
-               
-               
 
+            <!-- CONTAINER TODO AND UTENTI ATTIVI -->
 
-           
-
+            <div class="container-todo-utenti-attivi">
 
                     <!-- TO DO -->
-                    <div class="container-todo ">
+            
                 <div class="border rounded ">
                     <h1>Todo</h1>
                 
@@ -320,9 +302,8 @@
                     </div>
                 </div>
 
-            </div>
-                          <!-- CONTAINER TODO AND UTENTI ATTIVI -->
-                         <div class="container-utenti-attivi">
+                         <!-- UTENTI ATTIVI -->
+                <div class="utenti-attivi border rounded">
                     <div class="img-stats">
                         <img src="./assets/img/stats.jpeg" alt="" class="mw-100">
                     </div>
@@ -342,6 +323,7 @@
 
                 </div>
 
+            </div>
 
            
         </main>
