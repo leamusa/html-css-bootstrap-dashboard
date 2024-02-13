@@ -193,10 +193,185 @@
 
       <!-- MAIN -->
       <main class="overflow-auto">
+   <!-- content -->
+
+   <div id="content">
+
+    <!-- side -->
+    <div id="side">
+        <div class="container-fluid g-0 h-100 pt-3 pb-3 d-flex flex-column justify-content-between">
+
+            <!-- menu importato da bootstrap -->
+
+            <ul class="nav flex-column">
+                <li class="nav-item fs-5 mb-1">
+                    <a class="nav-link active d-flex align-items-center gap-3 justify-content-center text-white" aria-current="page" href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="off">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item fs-5 mb-1">
+                    <a class="nav-link d-flex align-items-center gap-3 justify-content-center text-white" href="#">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="off">Stats</span>
+                    </a>
+                </li>
+                <li class="nav-item fs-5 mb-1">
+                    <a class="nav-link d-flex align-items-center gap-3 justify-content-center text-white" href="#">
+                        <i class="fa-solid fa-signal"></i>
+                        <span class="off">Signals</span>
+                    </a>
+                </li>
+                    
+            </ul>
+            
+            <ul class="nav flex-column">
+
+                <li class="nav-item fs-5">
+                    <a class="nav-link d-flex align-items-center gap-3 justify-content-center text-white" href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="off">Admin</span>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- main -->
+
+    <main class="overflow-auto">
+
+        <!-- parte top -->
+
+        <div id="main_top" class="w-100 pt-3 pb-3 pe-5">
+
+            <div class="container-fluid d-md-flex justify-content-md-between align-items-md-center">
+
+                <div class="nuovo_studente">
+                    <!-- elemento di bootstrap -->
+
+                    <!-- nuovo studente offcanvas -->
+                    <button class="btn btn-primary d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <span class="fs-6 me-4 mb-4">Nuovo Studente</span>
+                    
+                        <i class="fa-regular fa-square-plus fs-1 mb-4"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        
+                        <form>
+                            
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                            <div class="row">
+                                <div class="col-6">
+
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <div class="input-group mb-3">
+
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                </div>
+                            </div>      
+                            
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Cittá</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Stato</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Francia</option>
+                                            <option value="3">Zimbawe</option>
+                                            <option value="5">Cambogia</option>
+                                          </select>  
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Cap</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                </div>
+                            </div>    
+
+
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                            </div>
+                            <button type="submit" class="btn btn-info text-white p-1">Salva</button>
+                            <button type="submit" class="btn btn-warning p-1">Svuota</button>
+                          </form>
+
+
+                    </div>
+                    </div>
+
+                </div>
+
+
+
+<!-- Prossime classi and-faq--------------------------------------------->
 
       <div class="d-flex flex-lg-wrap">
         <div class="container-prossime-classi-and-faq">
-          <!-- PROSSIME CLASSI -->
+      
           <div class="prossime-classi">
             <div class="table-container border rounded">
               <table class="table table-hover caption-top">

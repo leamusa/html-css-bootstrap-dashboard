@@ -1,3 +1,4 @@
+/* regole generali */
 body {
   font-family: "Dosis", sans-serif;
   font-family: "PT Sans", sans-serif;
@@ -45,127 +46,7 @@ header .btn-primary {
   content: none;
 }
 
-/* NAV-LEFT */
-.nav-left {
-  min-height: calc(100vh - 80px);
-  width: 150px;
-  background-color: #0f263d;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.nav-left a {
-  text-decoration: none;
-  color: white;
-  line-height: 35px;
-  margin-left: 10%;
-}
-.nav-left i {
-  margin-right: 10px;
-}
-
-.nav-links:hover {
-  background-color: rgb(157, 157, 157);
-}
-
-/* NAV LEFT XS */
-.continer-nav-left-xs {
-  padding: 0.5%;
-  display: none;
-}
-
-.nav-left-xs {
-  height: 100%;
-  width: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #0f263d;
-  text-align: center;
-  color: white;
-}
-
-/* NAV CENTER */
-.central {
-  height: 100%;
-  width: 100%;
-}
-
-.students {
-  height: 120px;
-  background-color: #1b72e8;
-  padding-right: 5%;
-}
-
-.nav-center .boolean-piano-blaze button {
-  border-radius: 25px;
-  background-color: #165bba;
-}
-
-.plus.btn {
-  margin-left: 15px;
-}
-
-/* CONTAINER PROSSIME CLASSI AND FAQ */
-.container-prossime-classi-and-faq {
-  width: 60%;
-
-  padding: 1%;
-}
-
-/* PROSSIME CLASSI */
-
-caption,
-.faq {
-  background-color: rgb(232, 232, 232);
-}
-
-.class {
-  padding-right: 150px;
-}
-
-.prossime-classi i {
-  max-width: 100%;
-  font-size: 150%;
-}
-
-.prossime-classi td {
-  padding: 0.1rem;
-}
-
-/* FAQ */
-.faq {
-  width: 100%;
-  margin-top: 2%;
-}
-
-.accordion {
-  --bs-accordion-active-bg: rgb(255, 255, 255);
-  --bs-accordion-btn-focus-box-shadow: rgb(0, 0, 0);
-}
-
-/* TODO */
-.container-todo-utenti-attivi {
-  width: 35%;
-  margin: 0 auto;
-  padding: 1%;
-}
-.border.rounded {
-  padding: 5px;
-  max-width: 100%;
-}
-
-/* main */
-
-main {
-  height: 100%;
-  width: calc(100% - 60px);
-  /* overflow: auto; */
-}
-
-/********************* Media Query *********************************************************/
-
-//* tablet */
+/* tablet */
 
 @media only screen and (min-width: 768px) {
 }
@@ -174,10 +55,10 @@ main {
 
 @media only screen and (min-width: 992px) {
   header .off {
-    display: ;
+    display: block;
   }
   header .on {
-    display: ;
+    display: none;
   }
   .logo {
     width: auto;
@@ -191,12 +72,95 @@ main {
   display: flex;
 }
 
+/* side */
+
+#side {
+  max-height: 100%;
+  height: 100%;
+  width: 60px;
+  background-color: rgb(14, 41, 63);
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+}
+
+/* desktop */
+
+@media only screen and (min-width: 992px) {
+  #side {
+    width: 150px;
+  }
+  #side .off {
+    display: block;
+  }
+  #side .on {
+    display: none;
+  }
+}
+
 /* main */
 
 main {
   height: 100%;
   width: calc(100% - 60px);
   /* overflow: auto; */
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+  .left_top .off {
+    display: table-cell;
+  }
+  .left_top .on {
+    display: none;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: calc(100% - 150px);
+  }
+
+  #main_top .off {
+    display: block;
+  }
+  #main_top .on {
+    display: none;
+  }
+}
+
+/* top */
+
+#main_top {
+  background-color: rgb(0, 115, 227);
+}
+
+/* nuovo studente */
+
+#main_top .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: none;
+  --bs-btn-border-color: #0d6efd;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+#main_top .btn {
+  --bs-btn-padding-x: none;
 }
 
 /* offcanvas */
@@ -216,7 +180,43 @@ main {
 /* desktop */
 
 @media only screen and (min-width: 992px) {
-  .offcanvas.offcanvas {
+  .offcanvas.offcanvas-end {
     width: 50%;
   }
 }
+
+/* bottom */
+#main_bottom {
+  background-color: rgb(248, 249, 250);
+}
+
+/* parte sinistra in alto */
+
+.left_top .avatar {
+  width: 30px;
+}
+
+.bottom_left {
+  width: 100%;
+}
+.bottom_right {
+  width: 100%;
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+}
+
+/* desktop */
+
+@media only screen and (min-width: 992px) {
+  .bottom_left {
+    width: calc(70% - 10px);
+  }
+  .bottom_right {
+    width: calc(30% - 10px);
+  }
+}
+
+/* parte destra in alto */
